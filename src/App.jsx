@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+import TourCard from './components/TourCard';
 
 function App() {
   const [tours, setTours] = useState([]);
@@ -29,6 +30,10 @@ function App() {
     fetchTours();
   }, []);
 
+  const removeTour = (id) => {
+    setTours((prevTours) => prevTours.filter((tour) => tour.id !== id));
+  };
+
   if (loading) {
     return <h2>Loading...</h2>;
   }
@@ -50,15 +55,11 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <h2>Tours</h2>
-        <ul>
+        <div className="tour-list">
           {tours.map((tour) => (
-            <li key={tour.id}>
-              <h3>{tour.name}</h3>
-              <p>{tour.info}</p>
-              <p>Price: ${tour.price}</p>
-            </li>
+            <TourCard key={tour.id} tour={tour} onRemove={removeTour} />
           ))}
-        </ul>
+        </div>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

@@ -1,0 +1,37 @@
+.tour-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tour-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tour-details {
+  margin-top: 12px;
+}
+
+.tour-price {
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.not-interested-btn {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.not-interested-btn:hover {
+  background-color: #d62828;
+}
