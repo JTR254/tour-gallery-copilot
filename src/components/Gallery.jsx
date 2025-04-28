@@ -1,6 +1,6 @@
 import React from 'react';
 import TourCard from './TourCard';
-import './Gallery.css'; // Import the CSS file for styling
+import './Gallery.css';
 
 function Gallery({ tours, onRemove }) {
   return (

@@ -2,9 +2,10 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  margin: 16px 0;
+  margin: 16px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
 }
 
 .tour-image {
@@ -15,6 +16,16 @@
 
 .tour-details {
   margin-top: 12px;
+}
+
+.tour-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tour-info {
+  margin: 8px 0;
+  color: #555;
 }
 
 .tour-price {

@@ -2,5 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  justify-content: center;
+  justify-content: space-around; /* Spread items across the full width */
+  margin-top: 20px;
+  padding: 0 20px; /* Add padding to prevent items from touching the edges */
 }
