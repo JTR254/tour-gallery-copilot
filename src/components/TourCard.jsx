@@ -1,5 +1,6 @@
 import './TourCard.css';
 
+// TourCard component to display individual tour details
 function TourCard({ tour, onRemove }) {
   return (
     <div className="tour-card">

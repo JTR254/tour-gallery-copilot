@@ -1,3 +1,4 @@
+/* Card container for individual tours */
 .tour-card {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -8,31 +9,37 @@
   max-width: 300px;
 }
 
+/* Tour image styles */
 .tour-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+/* Tour details container */
 .tour-details {
   margin-top: 12px;
 }
 
+/* Tour name styles */
 .tour-name {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
+/* Tour info text */
 .tour-info {
   margin: 8px 0;
   color: #555;
 }
 
+/* Tour price styles */
 .tour-price {
   font-weight: bold;
   color: #2a9d8f;
 }
 
+/* "Not Interested" button styles */
 .not-interested-btn {
   background-color: #e63946;
   color: white;

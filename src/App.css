@@ -1,11 +1,13 @@
+/* Main application container */
 .app {
   font-family: Arial, sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 100%; /* Take up the full width of the screen */
+  width: 100%;
 }
 
+/* Header styles */
 .app-header {
   background-color: #2a9d8f;
   color: white;
@@ -13,17 +15,20 @@
   margin-bottom: 20px;
 }
 
+/* Status message styles (loading or error) */
 .status-message {
   font-size: 1.5rem;
   color: #555;
   margin-top: 20px;
 }
 
+/* Styles for the "No Tours Left" message */
 .no-tours {
   text-align: center;
   margin-top: 20px;
 }
 
+/* Refresh button styles */
 .refresh-btn {
   background-color: #2a9d8f;
   color: white;

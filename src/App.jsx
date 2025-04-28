@@ -3,11 +3,12 @@ import './App.css';
 import Gallery from './components/Gallery';
 
 function App() {
+  // State variables
   const [tours, setTours] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch tours data from the API
+  // Function to fetch tours data from the API
   const fetchTours = async () => {
     setLoading(true);
     try {
@@ -25,17 +26,17 @@ function App() {
     }
   };
 
-  // Fetch tours on component mount
+  // Fetch tours when the component mounts
   useEffect(() => {
     fetchTours();
   }, []);
 
-  // Remove a tour by ID
+  // Function to remove a tour by its ID
   const removeTour = (id) => {
     setTours((prevTours) => prevTours.filter((tour) => tour.id !== id));
   };
 
-  // Conditional rendering based on state
+  // Conditional rendering: Show loading, error, or content
   if (loading) {
     return <h2 className="status-message">Loading...</h2>;
   }
@@ -55,6 +56,7 @@ function App() {
     );
   }
 
+  // Main application layout
   return (
     <div className="app">
       <header className="app-header">
